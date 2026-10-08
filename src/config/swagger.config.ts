@@ -100,7 +100,7 @@ export function createSwaggerConfig(): Omit<OpenAPIObject, 'paths'> {
   const { version } = require('../../package.json') as { version: string };
   return (
     new DocumentBuilder()
-      .setTitle('OpenWA API')
+      .setTitle('Eddy API')
       // Two refusals are issued by middleware BEFORE routing, so they apply to every operation
       // below and cannot be expressed as a per-operation @ApiResponse without repeating them 187
       // times. Documenting them here keeps the contract honest for clients that would otherwise
